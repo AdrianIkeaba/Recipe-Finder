@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="220dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="350dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="16dp"
+        app:cardBackgroundColor="#E3E2E2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/thumbnail"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:translationX="8dp"
+            android:translationY="8dp"
+            tools:ignore="ContentDescription,ImageContrastCheck"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/recipeTitle"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:lines="2"
+            android:maxLines="2"
+            android:text="@string/recipe_title"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:translationX="88dp"
+            android:translationY="8dp" />
+
+        <TextView
+            android:id="@+id/ingredients"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="10"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:text="@string/ingredients"
+            android:textColor="@color/black"
+            android:translationX="8dp"
+            android:translationY="86dp" />
+
+        <ImageView
+            android:id="@+id/linkButton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:translationX="320dp"
+            android:translationY="150dp"
+            app:srcCompat="@android:drawable/ic_menu_share"
+            tools:ignore="ContentDescription,ImageContrastCheck" />
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

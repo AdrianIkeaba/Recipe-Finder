@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#00FFFFFF"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="379dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="52dp"
+        android:text="@string/title"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextSizeCheck" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="405dp"
+        android:layout_height="157dp"
+        android:layout_marginTop="144dp"
+        android:background="#00FFFFFF"
+        app:cardBackgroundColor="#00FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <EditText
+            android:id="@+id/searchTermEdt"
+            android:layout_width="338dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/hint_search"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:translationX="30dp"
+            android:translationY="50dp"
+            android:autofillHints="" />
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="@string/go"
+        android:textColor="#4A148C"
+        app:background="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        app:layout_constraintVertical_bias="0.396" />
+</androidx.constraintlayout.widget.ConstraintLayout>
